@@ -1,5 +1,6 @@
 /*
 Video Link: https://youtu.be/A0-0uU_g3iE
+
 Problem 1.
 Given an array and a target value, return the index of the
 target value in the array.
