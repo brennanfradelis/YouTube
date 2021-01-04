@@ -1,4 +1,6 @@
 /*
+Video Link: https://youtu.be/W5Swrn1eSJI
+
 Problem 1.
 Given an array of meetings represented by arrays of length 2
 with a start time and an end time, return true if any of the 
