@@ -1,6 +1,6 @@
 //Video Link: https://youtu.be/PR-t0sUTddw
 
-class TreeNode {
+class Node {
     constructor(value) {
         this.value = value;
         this.next = null;
