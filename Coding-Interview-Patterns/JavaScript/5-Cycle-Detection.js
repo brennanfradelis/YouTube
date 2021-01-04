@@ -7,7 +7,7 @@ class Node {
     }
 }
 
-function hasCycle(node) {
+function hasCycle(head) {
     var slow = head;
     var fast = head;
     while (fast && fast.next) {
