@@ -48,17 +48,29 @@ Problem 3.
 Given a sorted array, square each value in the array and return the array in sorted order.
 */
 function sortedSquaredArray(arr) {
-    var left = 0;
-    var right = arr.length-1;
+    var right = 0;
+    while (right < arr.length && arr[right] < 0) {
+        right++
+    }
+    var left = right - 1;
     var output = [];
-    while (left < right) {
+
+    while (left >= 0 && right < arr.length) {
         if (arr[left]*arr[left] < arr[right]*arr[right]) {
             output.push(arr[left]*arr[left]);
-            left++;
+            left--;
         } else {
             output.push(arr[right]*arr[right]);
-            right--;
+            right++;
         }
+    }
+    while (left >= 0) {
+        output.push(arr[left]*arr[left]);
+        left--;
+    }
+    while (right < arr.length) {
+        output.push(arr[right]*arr[right]);
+        right++
     }
     return output;
 }
