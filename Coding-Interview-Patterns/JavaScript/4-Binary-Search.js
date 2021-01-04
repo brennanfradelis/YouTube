@@ -2,7 +2,7 @@
 Video Link: https://youtu.be/A0-0uU_g3iE
 
 Problem 1.
-Given an array and a target value, return the index of the
+Given a sorted array and a target value, return the index of the
 target value in the array.
 */
 function binarySearch(arr, target) {
@@ -23,7 +23,7 @@ function binarySearch(arr, target) {
 
 /*
 Problem 2.
-Given an array and a target value where there is a contiguous group
+Given a sorted array and a target value where there is a contiguous group
 of values equal to the target, return the leftmost index and rightmost
 index of this group. Return [-1, -1] if the group does not exist.
 */
@@ -33,7 +33,7 @@ function binarySearchGroup(arr, target) {
     
     var left = 0;
     var right = arr.length - 1;
-    //look for the rightmost index
+    //look for the leftmost index
     while (left <= right) {
         mid = Math.floor(left + (right-left)/2)
         if (arr[mid] === target) {
@@ -47,7 +47,7 @@ function binarySearchGroup(arr, target) {
     }
     left = 0;
     right = arr.length-1;
-    //look for the leftmost index
+    //look for the rightmost index
     while (left <= right) {
         mid = Math.floor((left+right)/2)
         if (arr[mid] === target) {
