@@ -8,7 +8,7 @@ function maxSumSubarray(arr, k) {
     var currSum = 0;
     for (let end = 0; end < arr.length; end++) {
         currSum += arr[end];
-        if (end - start + 1 == k) {
+        if (end - start + 1 === k) {
             maxSum = Math.max(maxSum, currSum);
         }
     }
