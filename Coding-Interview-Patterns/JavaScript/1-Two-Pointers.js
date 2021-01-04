@@ -1,4 +1,6 @@
 /*
+Video Link: https://youtu.be/VM3kmLrrN4Y
+
 Problem 1.
 Given a sorted array and a target, return the indices of two values that sum up to the target.
 Return [-1, -1] if two indices that sum to the target do not exist.
