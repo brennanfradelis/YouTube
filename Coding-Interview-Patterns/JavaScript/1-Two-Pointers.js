@@ -4,8 +4,8 @@ Given a sorted array and a target, return the indices of two values that sum up 
 Return [-1, -1] if two indices that sum to the target do not exist.
 */
 function twoSum(arr, target) {
-    left = 0;
-    right = arr.length-1;
+    var left = 0;
+    var right = arr.length-1;
     while (left < right) {
         var curr = arr[left] + arr[right];
         if (curr < target) {
