@@ -26,8 +26,7 @@ Assume there is only 1 possible answer.
 Return [-1,-1,-1] if three indices that sum to the target do not exist.
 */
 function threeSum(arr, target) {
-    var i = 0;
-    for (i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         var left = i + 1;
         var right = arr.length-1;
         while (left < right) {
