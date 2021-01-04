@@ -1,0 +1,134 @@
+{
+  "_from": "heap-js",
+  "_id": "heap-js@2.1.4",
+  "_inBundle": false,
+  "_integrity": "sha512-BTqPQI5dN24wC+wiAEC3VWtHnGNH2fh64TGzlVr1a7Smp6bNdzezpybYUBw8/ZRvlh+qUylPE1YJbnWEx3Ge/g==",
+  "_location": "/heap-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "heap-js",
+    "name": "heap-js",
+    "escapedName": "heap-js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/heap-js/-/heap-js-2.1.4.tgz",
+  "_shasum": "5bbee30fcc0a4a9319a0f07bb1fb56fd6396feaa",
+  "_spec": "heap-js",
+  "_where": "C:\\Users\\brenn\\Documents\\Youtube\\YouTube\\Coding-Interview-Patterns\\JavaScript",
+  "author": {
+    "name": "Ignacio Lago @ignlg",
+    "email": "ignacio@ignaciolago.com"
+  },
+  "bugs": {
+    "url": "https://github.com/ignlg/heap-js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Efficient Binary heap (priority queue, binary tree) data structure for JavaScript / TypeScript. Includes JavaScript methods, Python's heapq module methods, and Java's PriorityQueue methods.",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "@types/benchmark": "^2.1.0",
+    "@types/jest": "^26.0.19",
+    "@types/node": "^14.14.14",
+    "@typescript-eslint/eslint-plugin": "4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "benchmark": "^2.1.4",
+    "coveralls": "^3.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-standard": "5.0.0",
+    "husky": "^4.3.6",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.3",
+    "lodash.camelcase": "^4.3.0",
+    "prettier": "^2.2.1",
+    "prettier-eslint": "^12.0.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.35.1",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
+    "tsc-watch": "^4.2.9",
+    "typedoc": "^0.19.2",
+    "typescript": "^4.1.3"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/ignlg/heap-js#readme",
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "keywords": [
+    "heap",
+    "binary heap",
+    "priority queue",
+    "tree",
+    "binary tree",
+    "data structure",
+    "algorithm",
+    "typescript"
+  ],
+  "license": "BSD-3-Clause",
+  "lint-staged": {
+    "src/**/*.ts": [
+      "eslint --fix",
+      "jest --coverage --no-cache"
+    ]
+  },
+  "main": "dist/heap-js.umd.js",
+  "module": "dist/heap-js.es5.js",
+  "name": "heap-js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ignlg/heap-js.git"
+  },
+  "scripts": {
+    "benchmark": "node benchmark/benchmark.js",
+    "build": "tsc --project tsconfig.build.json && rollup -c && rimraf compiled && typedoc --out dist/docs --target es6 --theme minimal src",
+    "lint": "eslint --fix 'src/**/*.ts'",
+    "prebuild": "rimraf dist",
+    "precommit": "lint-staged",
+    "report-coverage": "cat ./coverage/lcov.info | coveralls",
+    "start": "tsc-watch --onSuccess \"rollup -c\"",
+    "test": "jest --coverage --no-cache",
+    "test:heapUsage": "node --expose-gc ./node_modules/.bin/jest --runInBand --logHeapUsage",
+    "test:prod": "npm run lint && npm run test -- --coverage --no-cache",
+    "test:watch": "jest --watch"
+  },
+  "types": "dist/types/Heap.d.ts",
+  "version": "2.1.4"
+}
