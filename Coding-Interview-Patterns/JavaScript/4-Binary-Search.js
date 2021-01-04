@@ -35,7 +35,6 @@ function binarySearchGroup(arr, target) {
     var right = arr.length - 1;
     //look for the rightmost index
     while (left <= right) {
-        // low + ((high - low) / 2)
         mid = Math.floor(left + (right-left)/2)
         if (arr[mid] === target) {
             leftIndex = mid;
