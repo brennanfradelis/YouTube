@@ -1,5 +1,5 @@
 /*
-Video Link: https://youtu.be/VM3kmLrrN4Y
+Video Link: https://www.youtube.com/watch?v=0l2nePjDFuA
 
 Problem 1.
 Given a sorted array and a target, return the indices of two values that sum up to the target.
