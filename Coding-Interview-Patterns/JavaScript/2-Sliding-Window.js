@@ -12,6 +12,8 @@ function maxSumSubarray(arr, k) {
         currSum += arr[end];
         if (end - start + 1 === k) {
             maxSum = Math.max(maxSum, currSum);
+            currSum -= arr[start];
+            start++;
         }
     }
     return maxSum;
