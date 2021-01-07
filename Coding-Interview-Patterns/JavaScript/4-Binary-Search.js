@@ -9,7 +9,7 @@ function binarySearch(arr, target) {
     var left = 0;
     var right = arr.length - 1;
     while (left <= right) {
-        let mid = Math.floor(left + (right-left)/2)
+        var mid = Math.floor(left + (right-left)/2)
         if (arr[mid] === target) {
             return mid;
         } else if (arr[mid] < target) {
@@ -35,7 +35,7 @@ function binarySearchGroup(arr, target) {
     var right = arr.length - 1;
     //look for the leftmost index
     while (left <= right) {
-        mid = Math.floor(left + (right-left)/2)
+        var mid = Math.floor(left + (right-left)/2)
         if (arr[mid] === target) {
             leftIndex = mid;
             right = mid - 1;
@@ -45,11 +45,11 @@ function binarySearchGroup(arr, target) {
             right = mid - 1;
         }
     }
-    left = 0;
-    right = arr.length-1;
+    var left = 0;
+    var right = arr.length-1;
     //look for the rightmost index
     while (left <= right) {
-        mid = Math.floor((left+right)/2)
+        var mid = Math.floor((left+right)/2)
         if (arr[mid] === target) {
             rightIndex = mid;
             left = mid + 1;
