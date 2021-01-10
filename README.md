@@ -1,8 +1,5 @@
 # Coding Interview Patterns and Techniques
 
-## My services to help you land software engineering jobs
-
-
 #### Tired of your resume being ignored? I'll help you write an outstanding resume that gets you interviews.
 [Sign up for my Resume Writing Service](https://calendly.com/brennanfradelis/resume)
 
