@@ -1,11 +1,5 @@
 # Coding Interview Patterns and Techniques
 
-#### One-on-one coaching where I'll teach you how to pass coding interviews.
-[Sign up for Coding Interview Coaching](https://calendly.com/brennanfradelis/coaching)
-
-#### Tired of your resume being ignored? I'll help you write an outstanding resume that gets you interviews.
-[Sign up for my Resume Writing Service](https://calendly.com/brennanfradelis/resume)
-
 ## Video Tutorials
 
 [1. Two Pointer Technique](https://youtu.be/0l2nePjDFuA)
